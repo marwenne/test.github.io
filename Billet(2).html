@@ -1,0 +1,63 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Document sans nom</title>
+<link rel="stylesheet" href="Billet.css" type="text/css" />
+<script language="javascript" type="text/jscript" src="Billet.js">
+</script>
+</head>
+
+<body>
+<marquee id="titre"> Bienvenue sur notre Site </marquee>
+<center><img src="img.jpg" alt="avion"/></center>
+<fieldset><legend>Réservation billet</legend>
+<form>
+
+<span class="A1">Pays de départ:</span>
+
+<select name="depart">
+	<optgroup label="Magreb">
+        <option>Tunis</option>
+        <option>Maroc</option>
+    </optgroup>
+</select>
+
+<span class="A1">Pays de destination :</span>
+
+<select name="arrive" >
+    <optgroup label="Europe>
+    	<option>France</option>
+        <option>Italie</option>
+    </optgroup>
+</select>
+
+<br /><br />
+<div class="A1">
+<label> Date de départ: </label> 
+<input type="date" name="date" id="date"/>
+</div>
+ 
+<br/>
+
+<span class="A2">Adulte :</span>
+<input type="number" min="0" max="100" name="NA" id="NA"/>
+	
+<span class="A2">Enfants(-12ans) :</span>
+<input type="number" min="0" max="100" name="NE" id="NE"/>
+
+<span class="A2">Bébés (-2ans) :</span>
+<input type="number" min="0" max="100" name="NB" id="NB"/>
+<br /><br />
+
+<input type="button" value="Calculer" onclick="calcul()"/>
+<input type="text" name="prix" size="5" id="prix"/><label id="prix">DT</label>
+<br /><br />
+
+<hr />
+<p id="alert"></p>
+</form>
+</fieldset>
+</body>
+</html>
